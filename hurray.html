@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurray We Won</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        
+        .hurrayContainer {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-content: center;
+            background-color: #89C15E;
+        }
+
+        .hurrayContainer>.hurrayBox {
+            display: flex;
+            flex-direction: column;
+            height: 90vh;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .hurrayContainer>.hurrayBox>.image {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hurrayContainer>.hurrayBox>.image>img:nth-child(1) {
+            width: 90%;
+            color: red;
+        }
+
+        .hurrayContainer>.hurrayBox>.image>img:nth-child(2) {
+            width: 15%;
+            position: absolute;
+            top: 22%;
+            left: 40%;
+        }
+
+        .hurrayContainer>.hurrayBox>.hurrayText h1,
+        h3 {
+            font-family: Roboto;
+            font-size: 91px;
+            font-weight: 600;
+            line-height: 107px;
+            letter-spacing: 0.1em;
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        .hurrayContainer>.hurrayBox>.hurrayText>h3 {
+            font-size: 40px;
+            font-weight: 400;
+            line-height: 80px;
+        }
+
+        .hurrayContainer>.hurrayBox>a {
+            text-decoration: none;
+            padding: 10px 30px;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            color: #000;
+            font-family: Roboto;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="hurrayContainer">
+        <div class="hurrayBox">
+            <div class="image">
+                <img src="./images/stars.png" alt="star">
+                <img src="./images/trophy.png" alt="">
+            </div>
+            <div class="hurrayText">
+                <h1>Hurray!!</h1>
+                <h3>You won the game</h3>
+            </div>
+            <a href="index.html">Play Again</a>
+        </div>
+    </section>
+
+    <script src="./animation/confetti.js"></script>
+    <script>
+
+        // start
+
+        const start = () => {
+            setTimeout(function () {
+                confetti.start()
+            });
+        };
+
+        //  Stop
+
+        const stop = () => {
+            setTimeout(function () {
+                confetti.stop()
+            }, 3000);
+        };
+
+        start();
+        stop();
+    </script>
+
+</body>
+
+</html>

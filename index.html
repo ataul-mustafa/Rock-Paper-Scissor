@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Paper Scissor</title>
+</head>
+<body>
+    <div class="mainContainer">
+        <section class="scoreCard">
+            <div class="name">Rock Paper Scissors</div>
+            <div class="scoreBox">
+                <div class="box">
+                    <p>computer Score</p>
+                    <h1 id="pcScore">0</h1>
+                </div>
+                <div class="box">
+                    <p>Your Score</p>
+                    <h1 id="myScore">0</h1>
+                </div>
+            </div>
+        </section>
+        <section id="game">
+            <div class="line1 line"></div>
+            <div id="rock" class="rock"><img src="./images/icons8-fist-67 1.png" alt=""></div>
+            <div class="line2 line"></div>
+            <div id="scissor" class="scissor"><img src="./images/17911 1.png" alt=""></div>
+            <div class="line3 line"></div>
+            <div id="paper" class="paper"><img src="./images/icons8-hand-64 1.png" alt=""></div>
+        </section>
+        <sectio id="playBox" class="play">
+            <div class="icon">
+                <p>You Picked</p>
+                <img id="me" src="./images/17911 1.png" alt="">
+            </div>
+            <div id="text">
+                <h2 id="rsult">You win</h2>
+                <h3 id="againstPC">Against Pc</h3>
+                <button id="playAgain">play again</button>
+            </div>
+            <div class="icon">
+                <p>PC Picked</p>
+                <img id="pc" src="./images/icons8-fist-67 1.png" alt="">
+            </div>
+        </sectio>
+
+        <section class="rules">
+            <div id="rulesBox">
+                <h1>Game Rules</h1>
+                <ul>
+                    <div id="closeIcon">X</div>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”
+                    </li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time
+                    </li>
+                    <li>If both players lay down the same hand, each player lays down another hand
+                    </li>
+                </ul>
+            </div>
+            <!-- <button id="rulesButton">Rules</button> -->
+            <div class="sideButtons">
+                <button id="rulesButton">Rules</button>
+                <a href="hurray.html">
+                    <button id="next">Next</button>
+                </a>
+            </div>
+
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
